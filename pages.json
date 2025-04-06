@@ -1,0 +1,47 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "uni-app"
+			}
+		},
+		{
+			"path" : "pages/copySong/copySong",
+			"style" : 
+			{
+				"navigationBarTitleText" : "复制歌词"
+			}
+		},
+		{
+			"path" : "pages/copySong/history",
+			"style" : 
+			{
+				"navigationBarTitleText" : "历史记录",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path" : "pages/copySong/detailCopySong",
+			"style" : 
+			{
+				"navigationBarTitleText" : "复制历史歌词"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+		// 条件编译：仅微信小程序生效
+		"mp-weixin": {
+			"animation": {
+				"duration": 300,
+				"createEffect": "slide-in-top", // 新页面进入动画
+				"destroyEffect": "slide-out-top" // 旧页面退出动画
+			}
+		}
+	},
+	"uniIdRouter": {}
+}
